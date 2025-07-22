@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            background: url('/statics/images/1314645.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Kanit', 'Prompt', 'Segoe UI', Arial, sans-serif;
+            color: #1a2a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card {
+            background: rgba(255,255,255,0.22);
+            border-radius: 28px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.12);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1.5px solid rgba(255,255,255,0.18);
+            width: 440px;
+            padding: 40px 32px 32px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 18px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px #0001;
+            background: #fff;
+        }
+        .name {
+            font-size: 1.5em;
+            color: #1a2a1a;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+        }
+        .bio {
+            font-size: 1.1em;
+            color: #1a2a1a;
+            margin-bottom: 18px;
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+        }
+        .section-title {
+            font-size: 1.1em;
+            color: #388e3c;
+            margin: 18px 0 8px 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+        }
+        .skills, .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .skill, .interest {
+            background: #e0f7faee;
+            color: #1a2a1a;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 1em;
+            font-weight: 600;
+            box-shadow: 0 1px 4px #0001;
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+        }
+        .social {
+            display: flex;
+            gap: 18px;
+            margin: 18px 0 0 0;
+            justify-content: center;
+        }
+        .social a {
+            color: #fff;
+            background: #233a2f;
+            border-radius: 8px;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            box-shadow: 0 2px 8px #0001;
+            transition: background 0.2s, color 0.2s;
+        }
+        .social a:hover {
+            background: #4caf50;
+            color: #fff;
+        }
+        .back-btn {
+            margin-top: 28px;
+            background: #233a2f;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 22px;
+            font-size: 1em;
+            font-weight: 600;
+            box-shadow: 0 2px 8px #0001;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+        }
+        .back-btn:hover {
+            background: #4caf50;
+            color: #fff;
+            box-shadow: 0 4px 16px #4caf5022;
+            transform: translateY(-2px) scale(1.04);
+        }
+        .badge {
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+            font-weight: 700;
+        }
+        .intro-section {
+            color: #1a2a1a !important;
+            text-shadow: 0 2px 8px #fff, 0 1px 0 #0002;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            .profile-card { width: 98vw; padding: 8vw 2vw; }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Prompt:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="intro-section" style="width:100%;margin-bottom:18px;text-align:center;">
+            <div style="font-size:2.2em;">👋</div>
+            <div style="font-size:1.18em;font-weight:bold;color:#2e5d3b;margin-bottom:4px;">Kongkiat KhongNil
+            <div style="font-size:1em;color:#233a2f;">รหัสนักศึกษา 6712732102<br><span style="font-style:italic;color:#4caf99;">“ชีวิตคือการผจญภัยที่ไม่มีวันสิ้นสุด!”</span></div>
+        </div>
+        <img class="avatar" src="/statics/images/9b367b34c79271552d740e164d98c3ec.gif" alt="Profile Avatar">
+        <div class="name">เเพม</div>
+        <div class="bio">สวัสดีครับ! ผมคือผู้กล้าแห่งโลกแฟนตาซี<br>ง่วงงงงงงงงงง</div>
+        <div class="section-title">เลเวล & ความสำเร็จ</div>
+        <div style="width:100%;margin-bottom:10px;">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <span id="level-label" style="font-weight:bold;color:#2e5d3b;">Lv. <span id="level">1</span></span>
+                <div style="flex:1;background:#e0e0e0;border-radius:8px;overflow:hidden;height:18px;">
+                    <div id="progress-bar" style="background:#4caf50;height:100%;width:10%;transition:width 0.5s;"></div>
+                </div>
+                <span id="exp-label" style="font-size:0.95em;color:#233a2f;">EXP <span id="exp">10</span>/100</span>
+            </div>
+        </div>
+        <div id="badge-area" style="margin-bottom:18px;display:flex;gap:10px;justify-content:center;">
+            <span class="badge" title="มือใหม่" style="background:#ffd700;color:#fff;padding:6px 14px;border-radius:8px;font-weight:bold;box-shadow:0 1px 4px #0002;">🏅 มือใหม่</span>
+        </div>
+        <div class="section-title">สุ่มรับรางวัลประจำวัน</div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:18px;">
+            <button id="spin-btn" style="background:#ff9800;color:#fff;border:none;border-radius:10px;padding:10px 22px;font-size:1em;font-weight:600;box-shadow:0 2px 8px #0001;cursor:pointer;transition:background 0.2s,transform 0.2s;">🎲 สุ่มรางวัล!</button>
+            <div id="spin-result" style="min-height:32px;font-size:1.1em;font-weight:bold;color:#4caf50;text-shadow:0 1px 4px #fff8;"></div>
+        </div>
+        <script src="/statics/js/scripts.js"></script>
+        <script>
+        // Animation/Interactive effect
+        document.querySelectorAll('.skill, .interest, .badge').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transform = 'scale(1.12) rotate(-2deg)';
+                el.style.boxShadow = '0 4px 16px #4caf5040';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+                el.style.boxShadow = '';
+            });
+        });
+        // Progress bar & Level logic
+        let level = 1, exp = 10;
+        function updateProgress() {
+            document.getElementById('level').textContent = level;
+            document.getElementById('exp').textContent = exp;
+            document.getElementById('progress-bar').style.width = (exp/100*100)+"%";
+        }
+        updateProgress();
+        // Spin reward logic
+        const rewards = [
+            {text:'EXP +20', type:'exp', value:20},
+            {text:'EXP +50', type:'exp', value:50},
+            {text:'เหรียญทอง 🥇', type:'badge', value:'🥇 นักล่ารางวัล'},
+            {text:'เหรียญเงิน 🥈', type:'badge', value:'🥈 ขยัน'},
+            {text:'EXP +10', type:'exp', value:10},
+            {text:'EXP +100', type:'exp', value:100},
+            {text:'เหรียญทองแดง 🥉', type:'badge', value:'🥉 มือใหม่'},
+        ];
+        document.getElementById('spin-btn').onclick = function() {
+            const btn = this;
+            btn.disabled = true;
+            btn.style.transform = 'scale(1.1) rotate(6deg)';
+            document.getElementById('spin-result').textContent = 'กำลังสุ่ม...';
+            setTimeout(()=>{
+                btn.style.transform = '';
+                const reward = rewards[Math.floor(Math.random()*rewards.length)];
+                if(reward.type==='exp') {
+                    exp += reward.value;
+                    if(exp>=100) { level++; exp = exp-100; }
+                    updateProgress();
+                    document.getElementById('spin-result').textContent = reward.text;
+                } else if(reward.type==='badge') {
+                    // Add badge if not exists
+                    let exists = false;
+                    document.querySelectorAll('#badge-area .badge').forEach(b=>{ if(b.textContent.includes(reward.value)) exists=true; });
+                    if(!exists) {
+                        const badge = document.createElement('span');
+                        badge.className = 'badge';
+                        badge.style.background = '#4caf50';
+                        badge.style.color = '#fff';
+                        badge.style.padding = '6px 14px';
+                        badge.style.borderRadius = '8px';
+                        badge.style.fontWeight = 'bold';
+                        badge.style.boxShadow = '0 1px 4px #0002';
+                        badge.textContent = reward.value;
+                        document.getElementById('badge-area').appendChild(badge);
+                    }
+                    document.getElementById('spin-result').textContent = reward.text;
+                }
+                btn.disabled = false;
+            }, 1200);
+        };
+        // ปุ่มเด้ง
+        document.querySelector('.back-btn').addEventListener('mousedown', function(){
+            this.style.transform = 'scale(0.95)';
+        });
+        document.querySelector('.back-btn').addEventListener('mouseup', function(){
+            this.style.transform = '';
+        });
+        </script>
+    </div>
+</body>
+</html>
+
